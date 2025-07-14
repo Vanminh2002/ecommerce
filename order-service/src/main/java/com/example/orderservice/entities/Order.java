@@ -26,5 +26,8 @@ public class Order {
     Double price;
 
     Double total;
+
+
+
 }
 

@@ -1,0 +1,4 @@
+Quản lý cấu hình phân tán: Nên dùng Spring Cloud Config hoặc tương tự.
+Giám sát, log tập trung: Nên tích hợp ELK, Prometheus, Grafana...
+Bảo mật: Cần xác thực, phân quyền ở gateway hoặc từng service.
+Xử lý lỗi, retry, circuit breaker: Nên dùng Resilience4j/Hystrix cho các call giữa service.
