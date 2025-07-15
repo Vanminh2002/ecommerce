@@ -1,0 +1,67 @@
+
+## 1. **Cấu trúc dự án & tổ chức code**
+- Thư mục, package, class có rõ ràng, đúng chuẩn không?
+- Đặt tên (naming) có nhất quán, dễ hiểu không?
+- Có tách biệt rõ controller, service, repository, dto, config, exception, v.v. không?
+
+## 2. **Quản lý cấu hình**
+- Sử dụng file cấu hình (application.yml/properties) hợp lý chưa?
+- Có tách biệt cấu hình theo môi trường (dev, prod, test) không?
+- Thông tin nhạy cảm (DB, secret) có bị lộ không?
+
+## 3. **Controller & API**
+- Định nghĩa endpoint rõ ràng, RESTful chưa?
+- Có validate input (request body, param) không?
+- Có trả về mã lỗi hợp lý (status code, message) không?
+- Có xử lý exception tập trung không?
+
+## 4. **Service & Business Logic**
+- Logic nghiệp vụ có tách biệt khỏi controller không?
+- Code có clean, dễ đọc, dễ test không?
+- Có lặp code, hardcode, hoặc logic phức tạp không?
+
+## 5. **Repository & Database**
+- Sử dụng JPA/Repository đúng chuẩn chưa?
+- Có dùng query hợp lý, tránh N+1 query, tránh lộ dữ liệu không?
+- Có migration (Flyway/Liquibase) không?
+
+## 6. **Bảo mật**
+- Có xác thực, phân quyền (Spring Security, JWT, OAuth2) không?
+- Có kiểm soát truy cập API không?
+- Có kiểm tra lỗ hổng phổ biến (SQL Injection, XSS, CSRF, v.v.) không?
+
+## 7. **Logging & Monitoring**
+- Có log đủ thông tin (info, error, warn) không?
+- Có log nhạy cảm không (password, token)?
+- Có tích hợp monitoring/tracing không?
+
+## 8. **Test**
+- Có unit test, integration test không?
+- Test có bao phủ các trường hợp chính không?
+- Có test lỗi, test biên không?
+
+## 9. **Tài liệu**
+- Có README, hướng dẫn setup, run, build không?
+- Có tài liệu API (Swagger/OpenAPI) không?
+
+## 10. **CI/CD & DevOps**
+- Có pipeline tự động build, test, deploy không?
+- Có script khởi tạo/migrate database không?
+- Có Dockerfile, docker-compose không?
+
+---
+
+**Tóm lại:**
+Bạn nên kiểm tra theo thứ tự:
+1. Cấu trúc code
+2. Cấu hình
+3. API
+4. Service
+5. Repository
+6. Bảo mật
+7. Logging
+8. Test
+9. Tài liệu
+10. CI/CD
+
+---

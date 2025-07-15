@@ -1,11 +1,10 @@
 package com.example.userservice.services;
 
-import com.example.userservice.dto.api.ApiResponse;
 import com.example.userservice.dto.user.request.UserCreateRequestDto;
 import com.example.userservice.dto.user.response.UserResponse;
 import com.example.userservice.entities.User;
 import com.example.userservice.mapper.user.UserMapper;
-import com.example.userservice.reposiitory.UserRepository;
+import com.example.userservice.repository.UserRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -13,10 +12,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
