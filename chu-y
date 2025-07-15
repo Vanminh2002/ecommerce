@@ -2,3 +2,19 @@ Quản lý cấu hình phân tán: Nên dùng Spring Cloud Config hoặc tương
 Giám sát, log tập trung: Nên tích hợp ELK, Prometheus, Grafana...
 Bảo mật: Cần xác thực, phân quyền ở gateway hoặc từng service.
 Xử lý lỗi, retry, circuit breaker: Nên dùng Resilience4j/Hystrix cho các call giữa service.
+
+
+
+
+| Service                  | Chức năng chính                                 |
+| ------------------------ | ----------------------------------------------- |
+| **API Gateway**          | Cửa ngõ chính, định tuyến, xác thực JWT         |
+| **Auth Service**         | Đăng nhập/Đăng ký, sinh JWT, refresh token      |
+| **User Service**         | Thông tin người dùng, quản lý profile           |
+| **Product Service**      | Quản lý sản phẩm, danh mục                      |
+| **Order Service**        | Đơn hàng, trạng thái, lịch sử mua               |
+| **Cart Service**         | Thêm/xoá/sp trong giỏ                           |
+| **Inventory Service**    | Kiểm soát tồn kho                               |
+| **Payment Service**      | Tích hợp thanh toán (momo, vnpay, stripe, v.v.) |
+| **Shipping Service**     | Tích hợp đơn vị vận chuyển                      |
+| **Notification Service** | Gửi email, sms, push notification               |
