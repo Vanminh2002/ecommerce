@@ -22,9 +22,10 @@ public class Order {
     Long id;
     @Column(name = "user_id")
     Long userId;
-    String product;
+    @Column(name = "product_id")
+    Long productId;
     Double price;
-
+    int quantity;
     Double total;
 
 
