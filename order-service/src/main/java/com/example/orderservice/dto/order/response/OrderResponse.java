@@ -1,5 +1,6 @@
 package com.example.orderservice.dto.order.response;
 
+import com.example.orderservice.connect.product.dto.ProductDto;
 import com.example.orderservice.connect.user.dto.UserDto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
@@ -16,7 +17,10 @@ import java.io.Serializable;
 public class OrderResponse {
     Long id;
     Long userId;
-    String product;
+    Long productId;
     double price;
     UserDto user;
+    ProductDto product;
+    Double totalPrice;
+    int quantity;
 }

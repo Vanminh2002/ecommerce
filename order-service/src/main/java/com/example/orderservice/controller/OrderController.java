@@ -50,4 +50,11 @@ public class OrderController {
                 .build();
     }
 
+    @DeleteMapping("delete/{id}")
+    ApiResponse<Void> deleteOrder(@PathVariable Long id) {
+        orderService.deleteOrder(id);
+        return ApiResponse.<Void>builder()
+                .message("Xóa đơn hàng thành công")
+                .build();
+    }
 }

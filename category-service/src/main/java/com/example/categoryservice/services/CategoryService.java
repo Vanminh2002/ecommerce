@@ -4,15 +4,19 @@ package com.example.categoryservice.services;
 import com.example.categoryservice.dto.category.request.CategorySearchRequest;
 import com.example.categoryservice.dto.category.request.CreateCategoryRequest;
 import com.example.categoryservice.dto.category.response.CategoryResponse;
-import com.example.categoryservice.dto.category.response.PaginatedResponse;
+
 import com.example.categoryservice.entities.Category;
 import com.example.categoryservice.mapper.CategoryMapper;
 import com.example.categoryservice.repository.CategoryRepository;
 import com.example.categoryservice.repository.CategoryRepositoryCustom;
+import com.example.commonlib.dto.PaginatedResponse;
+import com.example.commonlib.exception.AppException;
+import com.example.commonlib.exception.ErrorCode;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.log4j.Log4j2;
+import org.aspectj.weaver.ast.Not;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
@@ -51,10 +55,6 @@ public class CategoryService {
 
             Page<Category> categories = categoryRepositoryCustom.categoryPage(request);
             List<CategoryResponse> data = categories.stream().map(categoryMapper::toResponse).toList();
-//            log.warn("Lần đầu");
-//            if (categories.isEmpty()) {
-//                throw new RuntimeException("Không có danh mục nào trong DB");
-//            }
             return new PaginatedResponse<>(
                     categories.getNumber(),
                     categories.getSize(),
@@ -80,6 +80,11 @@ public class CategoryService {
             log.error(e);
             throw new RuntimeException("Lỗi khi cập nhật danh mục");
         }
+    }
+    public CategoryResponse getByCategoryId(Long id) {
+        var category = categoryRepository.findById(id)
+                .orElseThrow(()->new AppException(ErrorCode.NOT_FOUND));
+        return categoryMapper.toResponse(category);
     }
 
     public void deleteCategory(Long id) {

@@ -12,6 +12,7 @@ import java.io.Serializable;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class OrderCreateRequest  {
     Long userId;
-    String product;
+    Long productId;
     double price;
+    int quantity;
 }

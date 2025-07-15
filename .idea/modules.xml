@@ -3,11 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/ecommerce.auth-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/ecommerce.auth-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cart-service/ecommerce.cart-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cart-service/ecommerce.cart-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/category-service/ecommerce.category-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/category-service/ecommerce.category-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-lib/ecommerce.common-lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-lib/ecommerce.common-lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventory-service/ecommerce.inventory-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/inventory-service/ecommerce.inventory-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service/ecommerce.notification-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service/ecommerce.notification-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/ecommerce.order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/ecommerce.order-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/payment-service/ecommerce.payment-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payment-service/ecommerce.payment-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/permission-service/ecommerce.permission-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/permission-service/ecommerce.permission-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service/ecommerce.product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service/ecommerce.product-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/role-service/ecommerce.role-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/role-service/ecommerce.role-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shipping-service/ecommerce.shipping-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shipping-service/ecommerce.shipping-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service/ecommerce.user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service/ecommerce.user-service.main.iml" />
     </modules>
   </component>
