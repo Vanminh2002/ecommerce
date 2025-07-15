@@ -11,5 +11,6 @@ import lombok.experimental.FieldDefaults;
 public class OrderPlaceEvent {
     Long orderId;
     Long userId;
+    Long productId;
     Double total;
 }

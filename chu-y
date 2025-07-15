@@ -1,0 +1,27 @@
+Quản lý cấu hình phân tán: Nên dùng Spring Cloud Config hoặc tương tự.
+Giám sát, log tập trung: Nên tích hợp ELK, Prometheus, Grafana...
+Bảo mật: Cần xác thực, phân quyền ở gateway hoặc từng service.
+Xử lý lỗi, retry, circuit breaker: Nên dùng Resilience4j/Hystrix cho các call giữa service.
+
+
+
+//  Nếu muốn hỗ trợ so sánh lớn hơn/nhỏ hơn
+if (request.getPriceMin() != null) {
+    predicates.add(cb.greaterThanOrEqualTo(root.get("price"), request.getPriceMin()));
+}
+if (request.getPriceMax() != null) {
+    predicates.add(cb.lessThanOrEqualTo(root.get("price"), request.getPriceMax()));
+}
+
+
+private Double price;
+private Double priceMin;
+private Double priceMax;
+
+private Integer quantity;
+private Integer quantityMin;
+private Integer quantityMax;
+
+private Integer inventory;
+private Integer inventoryMin;
+private Integer inventoryMax;

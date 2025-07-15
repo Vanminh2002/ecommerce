@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10802212-1024-4801-98d2-20409671a6cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/category/response/PaginateCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-getway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-getway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/CategoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/CategoryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/api/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/api/CategoryApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/category/request/CategorySearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/category/request/CategorySearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/category/response/PaginatedResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/repository/CategoryRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/repository/CategoryRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chu-y" beforeDir="false" afterPath="$PROJECT_DIR$/chu-y" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/example/commonlib/CommonLibApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/example/commonlib/CommonLibApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/dto/order/request/OrderCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/dto/order/request/OrderCreateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/dto/order/response/OrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/dto/order/response/OrderResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vanminh2002&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vanminh2002/ecommerce.git&quot;,
+    &quot;accountId&quot;: &quot;9783a76c-2039-43a4-918c-4929fbb86729&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2zr0MWlqbrz6LMF1NuvmtaDDsvW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build ecommerce.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGetwayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CategoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CommonLibApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/minh/create-all-service&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Minh/ecommerce&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+    <configuration name="ApiGetwayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ecommerce.api-getway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigetway.ApiGetwayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ecommerce.category-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.categoryservice.CategoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonLibApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ecommerce.common-lib.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commonlib.CommonLibApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ecommerce.discovery-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ecommerce.notification-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notificationservice.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ecommerce.order-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ecommerce.product-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.productservice.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ecommerce.user-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10802212-1024-4801-98d2-20409671a6cd" name="Changes" comment="" />
+      <created>1752473836228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752473836228</updated>
+      <workItem from="1752473837453" duration="491000" />
+      <workItem from="1752474864596" duration="9901000" />
+      <workItem from="1752542462306" duration="2268000" />
+      <workItem from="1752544876168" duration="7692000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka_2.13" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+</project>

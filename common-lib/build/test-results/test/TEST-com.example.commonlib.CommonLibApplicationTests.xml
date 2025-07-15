@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.commonlib.CommonLibApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-14T06:06:57.236Z" hostname="DESKTOP-0ACC7CJ" time="0.919">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.commonlib.CommonLibApplicationTests" time="0.919"/>
+  <system-out><![CDATA[13:06:55.257 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.commonlib.CommonLibApplicationTests]: CommonLibApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:06:55.441 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.commonlib.CommonLibApplication for test class com.example.commonlib.CommonLibApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-07-14T13:06:56.330+07:00  INFO 4496 --- [common-lib] [    Test worker] c.e.commonlib.CommonLibApplicationTests  : Starting CommonLibApplicationTests using Java 17.0.12 with PID 4496 (started by Minh in D:\Minh\ecommerce\common-lib)
+2025-07-14T13:06:56.333+07:00  INFO 4496 --- [common-lib] [    Test worker] c.e.commonlib.CommonLibApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-07-14T13:06:57.228+07:00  INFO 4496 --- [common-lib] [    Test worker] c.e.commonlib.CommonLibApplicationTests  : Started CommonLibApplicationTests in 1.488 seconds (process running for 3.429)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

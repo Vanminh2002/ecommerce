@@ -1,5 +1,6 @@
 package com.example.orderservice.service;
 
+import com.example.orderservice.connect.product.ProductClient;
 import com.example.orderservice.connect.user.UserClient;
 import com.example.orderservice.dto.order.request.OrderCreateRequest;
 import com.example.orderservice.dto.order.response.OrderResponse;
@@ -27,6 +28,7 @@ public class OrderService {
     OrderMapper orderMapper;
     UserClient userClient;
     KafkaTemplate<String, OrderPlaceEvent> kafkaTemplate;
+    ProductClient productClient;
 
     public OrderResponse create(OrderCreateRequest request) {
         try {
@@ -37,6 +39,7 @@ public class OrderService {
                     .orderId(orderSave.getId())
                     .userId(orderSave.getUserId())
                     .total(orderSave.getTotal())
+                    .productId(orderSave.getProductId())
                     .build();
             kafkaTemplate.send("order-topic", event);
             log.warn("Đã gửi kafka event" + event);
@@ -67,14 +70,23 @@ public class OrderService {
     public OrderResponse findById(Long id) {
         var order = orderRepository.findById(id).orElseThrow(() -> new RuntimeException("không có"));
         var user = userClient.getUserById(order.getUserId());
+        var product = productClient.getProductId(order.getProductId());
+        var productResponse = product.getData();
         var response = user.getData();
+        Double total = order.getQuantity() * productResponse.getPrice();
         return OrderResponse.builder()
                 .id(order.getId())
                 .userId(order.getUserId())
-                .product(order.getProduct())
+                .productId(order.getProductId())
                 .price(order.getPrice())
                 .user(response)
-//                .user(user)
+                .product(productResponse)
+                .totalPrice(total)
+                .quantity(order.getQuantity())
                 .build();
+    }
+
+    public void deleteOrder(Long id) {
+        orderRepository.deleteById(id);
     }
 }
