@@ -55,6 +55,10 @@ public class CategoryService {
 
             Page<Category> categories = categoryRepositoryCustom.categoryPage(request);
             List<CategoryResponse> data = categories.stream().map(categoryMapper::toResponse).toList();
+//            log.warn("Lần đầu");
+//            if (categories.isEmpty()) {
+//                throw new RuntimeException("Không có danh mục nào trong DB");
+//            }
             return new PaginatedResponse<>(
                     categories.getNumber(),
                     categories.getSize(),

@@ -27,10 +27,8 @@ public class CategoryRepositoryCustom {
     EntityManager entityManager;
 
     public Page<Category> categoryPage(CategorySearchRequest request) {
-        // CriteriaBuilder là 1 công cụ để xây dựng các phần tử của 1 truy vấn dạng dộngd
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         // Query để lấy danh sách
-        //CriteriaQuery tạo 1 truy vấn sẽ trả về danh sách các đối tượng
         CriteriaQuery<Category> cq = cb.createQuery(Category.class);
         //  Root<Category> tương ứng với bản category trong sql nó đại diện cho From category
         Root<Category> root = cq.from(Category.class);
@@ -71,10 +69,9 @@ public class CategoryRepositoryCustom {
                 .where(countPredicates.toArray(new Predicate[0]));
 
         Long total = entityManager.createQuery(countQuery).getSingleResult();
-//        return new PageImpl<>(categories, PageRequest.of(request.getPage(), request.getSize()), total);
+        return new PageImpl<>(categories, PageRequest.of(request.getPageNo(), request.getPageSize()), total);
 
 
-        return new PageImpl<>(categories, PageRequest.of(page, size), total);
 
     }
 

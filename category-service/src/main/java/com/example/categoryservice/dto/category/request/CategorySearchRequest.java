@@ -17,13 +17,13 @@ public class CategorySearchRequest extends BaseFilter {
     Long id;
     String categoryName;
     String description;
-//    @Min(0)
-//    Integer pageNo = 0;
-//    //    @Size(min = 1 ,max = 50)// không đùng được với Integer
-//    @Min(1)
-//    @Max(100)
-//    Integer pageSize = 10;
-//
-//    String sort = "createdAt";
-//    String sortDirection = "desc";
+    @Min(0)
+    Integer pageNo = 0;
+    //    @Size(min = 1 ,max = 50)// không đùng được với Integer
+    @Min(1)
+    @Max(100)
+    Integer pageSize = 10;
+
+    String sort = "createdAt";
+    String sortDirection = "desc";
 }
