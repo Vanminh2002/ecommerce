@@ -65,3 +65,119 @@ Bạn nên kiểm tra theo thứ tự:
 10. CI/CD
 
 ---
+
+
+
+
+Mình đã kiểm tra sơ bộ toàn bộ cấu trúc và các thành phần của service `product-service`. Dưới đây là **báo cáo tổng quan** về những gì đã có và những gì còn thiếu hoặc nên bổ sung để đạt chuẩn best practice:
+
+---
+
+## 1. **Cấu trúc thư mục & package**
+- Đã có đầy đủ các package: `controller`, `service`, `repository`, `entities`, `dto` (request/response), `mapper`, `event`, `connect` (Feign client).
+- Cấu trúc này là **chuẩn** cho một microservice Spring Boot.
+
+## 2. **Cấu hình (application.yml)**
+- Đã có cấu hình cơ bản cho datasource, JPA, Eureka.
+- **Thiếu:**  
+  - Cấu hình logging (log level, pattern).
+    Giúp đọc log dễ hơn
+    Chỉ cần cấu hình log cho dễ đọc, dễ quản lý là đủ cho hầu hết dự án.
+    Nếu có yêu cầu đặc biệt (log gửi về server, lưu cloud, phân tích log...), mới cần cấu hình nâng cao hơn.
+    Bạn đã sẵn sàng chuyển sang phần tiếp theo chưa, hay muốn hỏi thêm gì về logging?
+
+
+  - Cấu hình actuator (giám sát, health check).
+    Giúp kiểm soát hệ thống
+    Chỉ cần cấu hình và biết endpoint là đủ dùng cho đa số nhu cầu.
+    Nếu muốn mở rộng (custom health, custom metrics), mới cần viết thêm code.
+
+
+
+  - Cấu hình CORS (nếu có API public).
+    CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật của trình duyệt, ngăn chặn website ở domain này gọi API ở domain khác nếu không được phép.
+    Nếu không cấu hình CORS, khi frontend (FE) chạy ở domain khác backend (BE) sẽ bị lỗi CORS policy và không gọi được API.
+    CORS giúp bạn kiểm soát domain nào được phép truy cập API, tăng bảo mật cho hệ thống.
+    + Cấu hình CORS:
+        @Configuration
+        public class WebConfig implements WebMvcConfigurer {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**") // Cho phép tất cả endpoint
+                        .allowedOrigins("http://localhost:3000") // Thay bằng domain FE của bạn
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
+            }
+        }
+        @CrossOrigin(origins = "http://localhost:3000")
+        @RestController
+        public class ProductController {
+            // ...
+        }
+
+  - Cấu hình cho Feign (timeout, hystrix nếu cần resilience).
+    Giúp kiểm soát thời gian chờ và xử lý lỗi khi gọi API
+    Chỉ cần cấu hình và biết endpoint là đủ dùng cho đa số nhu cầu.
+    Nếu muốn mở rộng (custom timeout, custom fallback), mới cần viết thêm code.
+
+
+
+## 3. **Entity, DTO, Mapper**
+- Đã có entity `Product`, các DTO request/response, mapper.
+- **Nên kiểm tra:**  
+  - Entity đã có annotation validation chưa?
+  - Mapper có dùng MapStruct hoặc tự viết? (nên dùng MapStruct cho best practice).
+
+## 4. **Repository, Service, Controller**
+- Đã có repository, service, controller.
+- **Nên kiểm tra:**  
+  - Service đã tách logic nghiệp vụ rõ ràng chưa?
+  - Controller đã chuẩn RESTful chưa? (status code, response body, exception)
+  - Repository có custom query chưa? (đã có ProductRepositoryCustom)
+
+## 5. **Xử lý Exception**
+- **Chưa thấy package hoặc class xử lý exception chung** (GlobalExceptionHandler).
+- Nên bổ sung để chuẩn hóa lỗi trả về cho client.
+
+## 6. **Logging, Validation**
+- **Chưa thấy cấu hình log level** (nên có log cho service, warning, error).
+- DTO request nên có annotation validation (`@NotNull`, `@Size`, ...).
+
+## 7. **API Response chuẩn hóa**
+- Đã có `ApiResponse` (dùng chung từ common-lib).
+- Nên đảm bảo mọi API đều trả về response chuẩn này.
+
+## 8. **Test (Unit, Integration)**
+- **Chưa thấy test cho service/controller** (nên có test cho các lớp chính).
+- Nên bổ sung test cho business logic và API.
+
+## 9. **Feign, Eureka, Load Balancer**
+- Đã có Feign client, Eureka client.
+- Nên kiểm tra timeout, fallback cho Feign (resilience).
+
+## 10. **Security**
+- **Chưa thấy cấu hình security** (nếu có yêu cầu bảo mật, nên dùng Spring Security).
+
+## 11. **Documentation**
+- **Chưa thấy cấu hình Swagger/OpenAPI** (nên có để tự động sinh tài liệu API).
+
+## 12. **Khả năng mở rộng, maintain**
+- Cấu trúc đã tốt, chỉ cần bổ sung các best practice trên.
+
+---
+
+## **Tóm tắt những gì nên bổ sung:**
+1. Global Exception Handler (chuẩn hóa lỗi)
+2. Validation cho DTO request
+3. Logging (log level, log error)
+4. Actuator (giám sát, health check)
+5. Swagger/OpenAPI (tài liệu API)
+6. Test (unit, integration)
+7. Cấu hình Feign timeout, fallback (nếu cần)
+8. Security (nếu có yêu cầu)
+9. CORS (nếu API public)
+
+---
+
+Bạn muốn mình **bắt đầu bổ sung/tư vấn chi tiết** cho mục nào trước? (Ví dụ: Exception Handler, Validation, Swagger, Logging, ...)

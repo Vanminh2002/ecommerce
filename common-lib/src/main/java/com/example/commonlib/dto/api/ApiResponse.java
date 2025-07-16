@@ -15,4 +15,8 @@ public class ApiResponse<T> {
     int code = 200;
     String message;
     T data;
+//    data sẽ trả về object trống thay vì null
+    public static <T> ApiResponse<T> error(int code, String message) {
+        return new ApiResponse<>(code, message, (T) new Object());
+    }
 }

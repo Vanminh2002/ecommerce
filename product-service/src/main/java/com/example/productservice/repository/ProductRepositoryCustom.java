@@ -74,9 +74,9 @@ public class ProductRepositoryCustom {
         if (request.getPrice() != null && request.getPrice() > 0) {
             predicates.add(cb.equal(root.get("price"), request.getPrice()));
         }
-        if (request.getQuantity() != null && request.getQuantity() > 0) {
-            predicates.add(cb.equal(root.get("quantity"), request.getQuantity()));
-        }
+//        if (request.getQuantity() != null && request.getQuantity() > 0) {
+//            predicates.add(cb.equal(root.get("quantity"), request.getQuantity()));
+//        }
         if (request.getInventory() != null) {
             predicates.add(cb.equal(root.get("inventory"), request.getInventory()));
         }

@@ -4,36 +4,134 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10802212-1024-4801-98d2-20409671a6cd" name="Changes" comment="Merge branch 'feature/minh/api-getway-service' into feature/minh/create-all-service&#10;&#10;# Conflicts:&#10;#&#9;.gradle/8.7/checksums/checksums.lock&#10;#&#9;.gradle/8.7/checksums/md5-checksums.bin&#10;#&#9;.gradle/8.7/checksums/sha1-checksums.bin&#10;#&#9;.gradle/8.7/executionHistory/executionHistory.bin&#10;#&#9;.gradle/8.7/executionHistory/executionHistory.lock&#10;#&#9;.gradle/8.7/fileHashes/fileHashes.bin&#10;#&#9;.gradle/8.7/fileHashes/fileHashes.lock&#10;#&#9;.gradle/8.7/fileHashes/resourceHashesCache.bin&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.gradle/file-system.probe&#10;#&#9;.idea/compiler.xml&#10;#&#9;.idea/gradle.xml&#10;#&#9;category-service/build.gradle&#10;#&#9;category-service/src/main/java/com/example/categoryservice/CategoryServiceApplication.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/controller/CategoryController.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/dto/category/request/CategorySearchRequest.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/repository/CategoryRepositoryCustom.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/services/CategoryService.java&#10;#&#9;category-service/src/main/resources/application.yml&#10;#&#9;chu-y&#10;#&#9;common-lib/build.gradle&#10;#&#9;common-lib/src/main/java/com/example/commonlib/CommonLibApplication.java&#10;#&#9;product-service/build.gradle&#10;#&#9;product-service/src/main/java/com/example/productservice/ProductServiceApplication.java&#10;#&#9;product-service/src/main/resources/application.yml">
+    <list default="true" id="10802212-1024-4801-98d2-20409671a6cd" name="Changes" comment="merger /feature-apigateway">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/auth-service/ecommerce.auth-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cart-service/ecommerce.cart-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/category-service/ecommerce.category-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common-lib/ecommerce.common-lib.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/inventory-service/ecommerce.inventory-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/notification-service/ecommerce.notification-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/order-service/ecommerce.order-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/payment-service/ecommerce.payment-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/permission-service/ecommerce.permission-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/product-service/ecommerce.product-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/role-service/ecommerce.role-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/shipping-service/ecommerce.shipping-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/user-service/ecommerce.user-service.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-getway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-getway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/best-practive" beforeDir="false" afterPath="$PROJECT_DIR$/best-practive" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ecommerce-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ecommerce-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/dto/category/request/CategorySearchRequest$CategorySearchRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/dto/category/request/CategorySearchRequest$CategorySearchRequestBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/dto/category/request/CategorySearchRequest$CategorySearchRequestBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/dto/category/request/CategorySearchRequest$CategorySearchRequestBuilderImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/dto/category/request/CategorySearchRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/dto/category/request/CategorySearchRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/repository/CategoryRepositoryCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/repository/CategoryRepositoryCustom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/services/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/classes/java/main/com/example/categoryservice/services/CategoryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/generated/sources/annotationProcessor/java/main/com/example/categoryservice/mapper/CategoryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/generated/sources/annotationProcessor/java/main/com/example/categoryservice/mapper/CategoryMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/libs/category-service-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/libs/category-service-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/libs/category-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/libs/category-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/reports/tests/test/classes/com.example.categoryservice.CategoryServiceApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/reports/tests/test/classes/com.example.categoryservice.CategoryServiceApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/reports/tests/test/packages/com.example.categoryservice.html" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/reports/tests/test/packages/com.example.categoryservice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/test-results/test/TEST-com.example.categoryservice.CategoryServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/test-results/test/TEST-com.example.categoryservice.CategoryServiceApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/category/request/CategorySearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/dto/category/request/CategorySearchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/repository/CategoryRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/repository/CategoryRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/example/categoryservice/services/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/classes/java/main/com/example/commonlib/dto/api/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/classes/java/main/com/example/commonlib/dto/api/ApiResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-lib/build/libs/common-lib-1.0-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/libs/common-lib-1.0-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/libs/common-lib-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/libs/common-lib-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/reports/tests/test/classes/com.example.commonlib.CommonLibApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/reports/tests/test/classes/com.example.commonlib.CommonLibApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/reports/tests/test/packages/com.example.commonlib.html" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/reports/tests/test/packages/com.example.commonlib.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/test-results/test/TEST-com.example.commonlib.CommonLibApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/test-results/test/TEST-com.example.commonlib.CommonLibApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/tmp/compileJava/compileTransaction/stash-dir/GlobalExceptionHandler.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common-lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/example/commonlib/CommonLibApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/example/commonlib/CommonLibApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/example/commonlib/dto/api/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/example/commonlib/dto/api/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/ProductServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/ProductServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/connect/category/CategoryClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/connect/category/CategoryClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/request/CreateProductRequest$CreateProductRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/request/CreateProductRequest$CreateProductRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/request/CreateProductRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/request/CreateProductRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/request/ProductSearchRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/request/ProductSearchRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/response/ProductResponse$ProductResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/response/ProductResponse$ProductResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/response/ProductResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/dto/response/ProductResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/entities/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/entities/Product$ProductBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/mapper/ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/mapper/ProductMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/mapper/ProductMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/mapper/ProductMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/repository/ProductRepositoryCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/repository/ProductRepositoryCustom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/classes/java/main/com/example/productservice/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/classes/java/test/com/example/productservice/ProductServiceApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/build/generated/sources/annotationProcessor/java/main/com/example/productservice/mapper/ProductMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/generated/sources/annotationProcessor/java/main/com/example/productservice/mapper/ProductMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/libs/product-service-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/libs/product-service-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/libs/product-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/libs/product-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/reports/tests/test/classes/com.example.productservice.ProductServiceApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/reports/tests/test/packages/com.example.productservice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/test-results/test/TEST-com.example.productservice.ProductServiceApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/connect/category/CategoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/connect/category/CategoryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/dto/request/CreateProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/dto/request/CreateProductRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/dto/request/ProductSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/dto/request/ProductSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/dto/response/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/dto/response/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/repository/ProductRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/repository/ProductRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +165,8 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -102,35 +200,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build ecommerce.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGetwayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CategoryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CommonLibApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/minh/create-all-service&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Minh/ecommerce&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build ecommerce.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ApiGetwayApplication.executor": "Run",
+    "Spring Boot.CategoryServiceApplication.executor": "Run",
+    "Spring Boot.CommonLibApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.FileServiceApplication.executor": "Run",
+    "Spring Boot.NotificationServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "git-widget-placeholder": "feature/minh/create-all-service",
+    "last_opened_file_path": "D:/Minh/ecommerce",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Minh\ecommerce" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -141,7 +245,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.FileServiceApplication">
     <configuration name="ApiGetwayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ecommerce.api-getway.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigetway.ApiGetwayApplication" />
@@ -173,23 +277,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonLibApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ecommerce.common-lib.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="CommonLibApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommonLibApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ecommerce.common-lib.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commonlib.CommonLibApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ecommerce.discovery-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ecommerce.file-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.fileservice.FileServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -234,14 +332,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="ecommerce.product-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.productservice.ProductServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RoleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="ecommerce.role-service.main" />
@@ -267,8 +357,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.FileServiceApplication" />
       <item itemvalue="Spring Boot.CartServiceApplication" />
-      <item itemvalue="Spring Boot.CommonLibApplication (1)" />
       <item itemvalue="Spring Boot.InventoryServiceApplication" />
       <item itemvalue="Spring Boot.PaymentServiceApplication" />
       <item itemvalue="Spring Boot.PermissionServiceApplication" />
@@ -276,12 +366,10 @@
       <item itemvalue="Spring Boot.ShippingServiceApplication" />
       <item itemvalue="Spring Boot.ApiGetwayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
-      <item itemvalue="Spring Boot.CommonLibApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
       <item itemvalue="Spring Boot.CategoryServiceApplication" />
       <item itemvalue="Spring Boot.NotificationServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
-      <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
     </list>
   </component>
@@ -304,7 +392,18 @@
       <workItem from="1752474864596" duration="9901000" />
       <workItem from="1752542462306" duration="2268000" />
       <workItem from="1752544876168" duration="7692000" />
+      <workItem from="1752628070637" duration="1735000" />
+      <workItem from="1752630244512" duration="23688000" />
     </task>
+    <task id="LOCAL-00001" summary="merger /feature-apigateway">
+      <option name="closed" value="true" />
+      <created>1752573466210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752573466211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,5 +436,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'feature/minh/api-getway-service' into feature/minh/create-all-service&#10;&#10;# Conflicts:&#10;#&#9;.gradle/8.7/checksums/checksums.lock&#10;#&#9;.gradle/8.7/checksums/md5-checksums.bin&#10;#&#9;.gradle/8.7/checksums/sha1-checksums.bin&#10;#&#9;.gradle/8.7/executionHistory/executionHistory.bin&#10;#&#9;.gradle/8.7/executionHistory/executionHistory.lock&#10;#&#9;.gradle/8.7/fileHashes/fileHashes.bin&#10;#&#9;.gradle/8.7/fileHashes/fileHashes.lock&#10;#&#9;.gradle/8.7/fileHashes/resourceHashesCache.bin&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.gradle/file-system.probe&#10;#&#9;.idea/compiler.xml&#10;#&#9;.idea/gradle.xml&#10;#&#9;category-service/build.gradle&#10;#&#9;category-service/src/main/java/com/example/categoryservice/CategoryServiceApplication.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/controller/CategoryController.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/dto/category/request/CategorySearchRequest.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/repository/CategoryRepositoryCustom.java&#10;#&#9;category-service/src/main/java/com/example/categoryservice/services/CategoryService.java&#10;#&#9;category-service/src/main/resources/application.yml&#10;#&#9;chu-y&#10;#&#9;common-lib/build.gradle&#10;#&#9;common-lib/src/main/java/com/example/commonlib/CommonLibApplication.java&#10;#&#9;product-service/build.gradle&#10;#&#9;product-service/src/main/java/com/example/productservice/ProductServiceApplication.java&#10;#&#9;product-service/src/main/resources/application.yml" />
+    <MESSAGE value="merger /feature-apigateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="merger /feature-apigateway" />
   </component>
 </project>

@@ -1,5 +1,9 @@
 server:
   port: 8004
+  #  loại bỏ các trace code dài dòng
+  error:
+    include-stacktrace: never
+    include-message: always
 spring:
   application:
     name: product-service
@@ -21,3 +25,34 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+
+
+logging:
+  level:
+    #    mức độ log mặc đinh
+    root: INFO
+    #    giảm log của spring
+    org.springframework: WARN
+    #    log tri tiết cho code
+    com.example.productservice: debug
+  #    định dạng log trên console
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+  file:
+    name: logs/product-service.log
+#    actuator giúp kiểm tra ứng dụng đang hoạt động ra sao, có vấn đề gì không, và hỗ trợ quản lý, giám sát hệ thống
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env,beans,logfile # hoặc '*' để mở hết
+  #        đây là các api để kiểm tra hệ thông
+  #        http://localhost:8004/actuator/health — Kiểm tra sức khỏe service
+  #        http://localhost:8004/actuator/info — Thông tin ứng dụng
+  #        http://localhost:8004/actuator/metrics — Thống kê, metrics
+  #        http://localhost:8004/actuator/env — Biến môi trường
+  #        http://localhost:8004/actuator/beans — Danh sách bean
+  endpoint:
+    health:
+      show-details: always # Hiện chi tiết health check

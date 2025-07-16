@@ -11,6 +11,5 @@ public class ProductSearchRequest extends BaseFilter {
     Long id;
     String productName;
     Double price;
-    Integer quantity;
     Integer inventory;
 }

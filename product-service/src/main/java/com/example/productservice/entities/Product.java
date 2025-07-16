@@ -18,8 +18,15 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
+
     @Column(name = "product_name")
     String productName;
+
+    @Column(name = "sku")
+    String sku; // Mã hàng hóa (Stock Keeping Unit) - dùng cho quản lý kho
+
+    @Column(name = "brand")
+    String brand; //Thương hiệu sản phẩm
 
     @Column(name = "description")
     String description;
@@ -27,8 +34,29 @@ public class Product {
     @Column(name = "price")
     Double price;
 
-    @Column(name = "quantity")
-    Integer quantity;
+    @Column(name = "price_original")
+    Double priceOriginal; // Giá gốc (trước khi giảm giá)
+
+    @Column(name = "discount")
+    Double discount; // Phần trăm hoặc số tiền giảm giá
+
+    @Column(name = "images",length = 4000)
+    String images; // Danh sách nhiều ảnh (nên có bảng riêng hoặc lưu JSON)
+
+    @Column(name = "image",length = 4000)
+    String image;
+
+    @Column(name = "origin")
+    String origin; // Xuất xứ
+
+    @Column(name = "dimensions")
+    String dimensions; // Kích thước
+
+    @Column(name = "tags")
+    String tags; // Từ khóa/tags sản phẩm
+
+    @Column(name = "category_id")
+    Long categoryId;
 
     @Column(name = "created_at")
     LocalDateTime createdAt = LocalDateTime.now();
@@ -36,13 +64,18 @@ public class Product {
     @Column(name = "updated_at")
     LocalDateTime updatedAt = LocalDateTime.now();
 
-    @Column(name = "inventory")
-    Integer inventory;
+    @Column(name = "created_by")
+    String createdBy;
 
-    @Column(name = "image")
-    String image;
+    @Column(name = "updated_by")
+    String updatedBy;
 
-    @Column(name = "category_id")
-    Long categoryId;
 
+    public Double getFinalPrice() {
+        if (discount != null && discount > 0) {
+            // Giả sử discount là phần trăm
+            return priceOriginal * (1 - discount / 100);
+        }
+        return priceOriginal;
+    }
 }

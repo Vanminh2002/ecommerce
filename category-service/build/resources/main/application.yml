@@ -1,6 +1,8 @@
 server:
   port: 8005
 spring:
+  application:
+    name: category-service
   datasource:
     url: jdbc:postgresql://localhost:5432/category_services_db
     username: postgres

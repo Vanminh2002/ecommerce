@@ -8,11 +8,16 @@ import com.example.productservice.dto.request.ProductUpdateRequest;
 import com.example.productservice.dto.response.ProductResponse;
 import com.example.productservice.entities.Product;
 import com.example.productservice.service.ProductService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.w3c.dom.stylesheets.LinkStyle;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("product")
@@ -22,9 +27,9 @@ public class ProductController {
     ProductService productService;
 
     @PostMapping("create")
-    ApiResponse<ProductResponse> create(@RequestBody CreateProductRequest request) {
+    ApiResponse<ProductResponse> create(@ModelAttribute CreateProductRequest request, @RequestParam List<MultipartFile> file) {
 
-        ProductResponse response = productService.createProduct(request);
+        ProductResponse response = productService.createProduct(request, file);
         return ApiResponse.<ProductResponse>builder()
                 .message("Tạo mới sản phẩm thành công")
                 .data(response).build();
@@ -41,8 +46,8 @@ public class ProductController {
     }
 
     @PutMapping("update/{id}")
-    ApiResponse<ProductResponse> update(@PathVariable Long id, @RequestBody ProductUpdateRequest request) {
-        ProductResponse response = productService.UpdateProduct(id, request);
+    ApiResponse<ProductResponse> update(@PathVariable Long id, @ModelAttribute ProductUpdateRequest request, List<MultipartFile> file) throws JsonProcessingException {
+        ProductResponse response = productService.UpdateProduct(id, request, file);
         return ApiResponse.<ProductResponse>builder()
                 .data(response)
                 .message("Cập nhật product thành công")

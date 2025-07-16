@@ -28,6 +28,13 @@
         <module name="ecommerce.user-service.main" />
         <module name="ecommerce.order-service.main" />
       </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.32/17d46b3e205515e1e8efd3ee4d57ce8018914163/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="ecommerce.file-service.main" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />
   </component>
@@ -51,6 +58,9 @@
       <module name="ecommerce.discovery-server" options="-parameters" />
       <module name="ecommerce.discovery-server.main" options="-parameters" />
       <module name="ecommerce.discovery-server.test" options="-parameters" />
+      <module name="ecommerce.file-service" options="-parameters" />
+      <module name="ecommerce.file-service.main" options="-parameters" />
+      <module name="ecommerce.file-service.test" options="-parameters" />
       <module name="ecommerce.inventory-service" options="-parameters" />
       <module name="ecommerce.inventory-service.main" options="-parameters" />
       <module name="ecommerce.inventory-service.test" options="-parameters" />

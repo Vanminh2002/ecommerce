@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-07-15T16:38:18+0700",
+    date = "2025-07-16T14:57:30+0700",
     comments = "version: 1.5.5.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-8.7.jar, environment: Java 17.0.12 (Oracle Corporation)"
 )
 @Component
@@ -24,12 +24,19 @@ public class ProductMapperImpl implements ProductMapper {
         Product.ProductBuilder product = Product.builder();
 
         product.productName( request.getProductName() );
+        product.sku( request.getSku() );
+        product.brand( request.getBrand() );
         product.description( request.getDescription() );
         product.price( request.getPrice() );
-        product.quantity( request.getQuantity() );
-        product.inventory( request.getInventory() );
-        product.image( request.getImage() );
+        product.priceOriginal( request.getPriceOriginal() );
+        product.discount( request.getDiscount() );
+        product.images( request.getImages() );
+        product.origin( request.getOrigin() );
+        product.dimensions( request.getDimensions() );
+        product.tags( request.getTags() );
         product.categoryId( request.getCategoryId() );
+        product.createdBy( request.getCreatedBy() );
+        product.updatedBy( request.getUpdatedBy() );
 
         return product.build();
     }
@@ -44,14 +51,23 @@ public class ProductMapperImpl implements ProductMapper {
 
         productResponse.id( product.getId() );
         productResponse.productName( product.getProductName() );
+        productResponse.sku( product.getSku() );
+        productResponse.brand( product.getBrand() );
         productResponse.description( product.getDescription() );
         productResponse.price( product.getPrice() );
-        productResponse.quantity( product.getQuantity() );
+        productResponse.priceOriginal( product.getPriceOriginal() );
+        productResponse.discount( product.getDiscount() );
+        productResponse.image( product.getImage() );
+        productResponse.origin( product.getOrigin() );
+        productResponse.dimensions( product.getDimensions() );
+        productResponse.tags( product.getTags() );
         productResponse.createdAt( product.getCreatedAt() );
         productResponse.updatedAt( product.getUpdatedAt() );
-        productResponse.inventory( product.getInventory() );
-        productResponse.image( product.getImage() );
+        productResponse.createdBy( product.getCreatedBy() );
+        productResponse.updatedBy( product.getUpdatedBy() );
         productResponse.categoryId( product.getCategoryId() );
+
+        productResponse.images( parseImages(product.getImages()) );
 
         return productResponse.build();
     }
@@ -63,8 +79,6 @@ public class ProductMapperImpl implements ProductMapper {
         }
 
         product.setPrice( request.getPrice() );
-        product.setQuantity( request.getQuantity() );
-        product.setInventory( request.getInventory() );
         product.setImage( request.getImage() );
     }
 }

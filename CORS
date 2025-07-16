@@ -1,0 +1,98 @@
+Dưới đây là các loại cấu hình CORS phổ biến trong Spring Boot, từ đơn giản đến nâng cao, để bạn dễ lựa chọn theo nhu cầu thực tế:
+
+---
+
+### 1. **CORS cho tất cả domain (KHÔNG AN TOÀN, chỉ dùng cho dev/test)**
+```java
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**") // Tất cả endpoint
+                .allowedOrigins("*") // Cho phép mọi domain
+                .allowedMethods("*") // Cho phép mọi method
+                .allowedHeaders("*");
+    }
+}
+```
+> **Lưu ý:** Không nên dùng trên production vì sẽ mở API cho tất cả mọi người.
+
+---
+
+### 2. **CORS chỉ cho phép một số domain nhất định (Khuyên dùng cho production)**
+```java
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("http://localhost:3000", "https://mydomain.com")
+                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedHeaders("*");
+    }
+}
+```
+> Chỉ cho phép FE ở các domain cụ thể gọi API.
+
+---
+
+### 3. **CORS cho phép gửi credentials (cookie, token)**
+```java
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("http://localhost:3000")
+                .allowedMethods("GET", "POST")
+                .allowedHeaders("*")
+                .allowCredentials(true); // Cho phép gửi cookie, token
+    }
+}
+```
+> Khi dùng allowCredentials(true), không được để allowedOrigins là "*".
+
+---
+
+### 4. **CORS cho từng endpoint cụ thể**
+```java
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/api/products/**") // Chỉ cho endpoint này
+                .allowedOrigins("http://localhost:3000");
+    }
+}
+```
+
+---
+
+### 5. **CORS cho từng controller hoặc method**
+```java
+@CrossOrigin(origins = "http://localhost:3000")
+@RestController
+public class ProductController {
+    // ...
+}
+```
+Hoặc cho từng method:
+```java
+@CrossOrigin(origins = "http://localhost:3000")
+@GetMapping("/api/products")
+public List<Product> getProducts() { ... }
+```
+
+---
+
+### 6. **CORS cấu hình động (Dynamic CORS)**
+Bạn có thể tự viết logic để kiểm soát domain nào được phép bằng cách implement `CorsConfigurationSource` (nâng cao, ít dùng).
+
+---
+
+## **Tóm lại:**
+- **Dev/test:** Cho phép tất cả domain (`*`)
+- **Production:** Chỉ cho phép domain tin cậy, cấu hình rõ ràng từng method, header, credentials.
+- **Có thể cấu hình cho toàn bộ app, từng endpoint, từng controller, hoặc từng method.**
+
+Bạn muốn mình gửi mẫu nào chi tiết hơn cho trường hợp của bạn không?

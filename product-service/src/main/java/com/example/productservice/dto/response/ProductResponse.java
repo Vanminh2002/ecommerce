@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Builder
@@ -16,21 +17,38 @@ import java.time.LocalDateTime;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductResponse {
     Long id;
+
     String productName;
+
+    String sku; // Mã hàng hóa (Stock Keeping Unit) - dùng cho quản lý kho
+
+    String brand; //Thương hiệu sản phẩm
 
     String description;
 
     Double price;
 
-    Integer quantity;
+    Double priceOriginal; // Giá gốc (trước khi giảm giá)
 
-    LocalDateTime createdAt;
+    Double discount; // Phần trăm hoặc số tiền giảm giá
 
-    LocalDateTime updatedAt;
-
-    Integer inventory;
+    List<String> images; // Danh sách nhiều ảnh (nên có bảng riêng hoặc lưu JSON)
 
     String image;
+
+    String origin; // Xuất xứ
+
+    String dimensions; // Kích thước
+
+    String tags; // Từ khóa/tags sản phẩm
+
+    LocalDateTime createdAt = LocalDateTime.now();
+
+    LocalDateTime updatedAt = LocalDateTime.now();
+
+    String createdBy;
+
+    String updatedBy;
 
     Long categoryId;
 
