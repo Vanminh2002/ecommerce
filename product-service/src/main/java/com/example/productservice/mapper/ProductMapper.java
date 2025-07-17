@@ -20,7 +20,7 @@ public interface ProductMapper {
 
     @Mapping(target = "images", expression = "java(parseImages(product.getImages()))")
     ProductResponse toResponse(Product product);
-
+//    @Mapping(target = "image",source = "image")
     public void updateProduct(@MappingTarget Product product, ProductUpdateRequest request);
 
     default List<String> parseImages(String imagesJson) {

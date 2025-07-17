@@ -19,3 +19,27 @@ spring:
       ddl-auto: update
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    #    mức độ log mặc đinh
+    root: INFO
+    #    giảm log của spring
+    org.springframework: WARN
+    #    log tri tiết cho code
+    com.example.productservice: debug
+  #    định dạng log trên console
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+  file:
+    name: logs/inventory-service.log
+
+
+
+  eureka:
+    client:
+      register-with-eureka: true
+      fetch-registry: true
+      service-url:
+        defaultZone: http://localhost:8761/eureka/

@@ -3,6 +3,8 @@ package com.example.orderservice.event;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -11,6 +13,8 @@ import lombok.experimental.FieldDefaults;
 public class OrderPlaceEvent {
     Long orderId;
     Long userId;
-    Long productId;
     Double total;
+    List<OrderItemEvent> orderItems;
+
+
 }

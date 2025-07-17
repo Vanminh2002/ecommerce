@@ -1,5 +1,6 @@
 package com.example.orderservice.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -22,12 +24,7 @@ public class Order {
     Long id;
     @Column(name = "user_id")
     Long userId;
-    @Column(name = "product_id")
-    Long productId;
-    Double price;
-    int quantity;
     Double total;
-
 
 
 }

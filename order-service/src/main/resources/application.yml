@@ -2,7 +2,9 @@ server:
   #  servlet:
   #    context-path: /order-service
   port: 8001
-
+  error:
+    include-stacktrace: never
+    include-message: always
 
 #H2 DB
 spring:
@@ -39,3 +41,19 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+
+logging:
+  level:
+    #    mức độ log mặc đinh
+    root: INFO
+    #    giảm log của spring
+    org.springframework: WARN
+    #    log tri tiết cho code
+    com.example.productservice: debug
+  #    định dạng log trên console
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+  file:
+    name: logs/order-service.log

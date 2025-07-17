@@ -27,6 +27,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -112,7 +113,9 @@ public class ProductService {
         return productMapper.toResponse(save);
     }
 
-    public void deleteProduct(Long id) {
+    public void deleteProduct(Long id) throws JsonProcessingException {
+        Product product = productRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.NOT_FOUND));
+        deleteImageProduct(product);
         productRepository.deleteById(id);
     }
 
@@ -132,6 +135,7 @@ public class ProductService {
                 .price(product.getPrice())
                 .description(product.getDescription())
                 .image(product.getImage())
+                .images(Collections.singletonList(product.getImages()))
                 .createdAt(product.getCreatedAt())
                 .updatedAt(product.getUpdatedAt())
                 .categoryId(product.getCategoryId())
@@ -139,16 +143,31 @@ public class ProductService {
                 .build();
     }
 
+
     private void deleteImageProduct(Product product) throws JsonProcessingException {
-        if (product.getImage() != null && !product.getImage().isBlank()) {
-            fileClient.deleteImage(product.getImage());
-        }
-        if (product.getImages() != null) {
-            List<String> images = new ObjectMapper().readValue(product.getImages(), new TypeReference<List<String>>() {
-            });
+
+
+
+        if (product.getImages() != null && !product.getImages().isBlank()) {
+            List<String> images = new ObjectMapper().readValue(product.getImages(), new TypeReference<List<String>>() {});
             for (String imageUrl : images) {
                 fileClient.deleteImage(imageUrl);
             }
+        } else if (product.getImage() != null && !product.getImage().isBlank()) {
+            // Nếu chỉ có 1 ảnh
+            fileClient.deleteImage(product.getImage());
         }
+
+//
+//        if (product.getImage() != null && !product.getImage().isBlank()) {
+//            fileClient.deleteImage(product.getImage());
+//        }
+//        if (product.getImages() != null) {
+//            List<String> images = new ObjectMapper().readValue(product.getImages(), new TypeReference<List<String>>() {
+//            });
+//            for (String imageUrl : images) {
+//                fileClient.deleteImage(imageUrl);
+//            }
+//        }
     }
 }

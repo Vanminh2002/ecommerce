@@ -28,7 +28,8 @@ public class MinioUploadImageService {
     private String bucket;
 
     public String uploadImage(MultipartFile file) throws IOException, ServerException, InsufficientDataException, ErrorResponseException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
-        String fileName = UUID.randomUUID() + " " + file.getOriginalFilename();
+        String fileName = file.getOriginalFilename();
+//        UUID.randomUUID() + " " +
         minioClient.putObject(
                 PutObjectArgs.builder()
                         .bucket(bucket)

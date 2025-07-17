@@ -13,7 +13,10 @@ public enum ErrorCode {
 
     NOT_FOUND(HttpStatus.NOT_FOUND, 401, "Không tìm thấy dữ liệu"),
     EXISTED(HttpStatus.BAD_REQUEST, 403, "Dữ liệu đã tồn tại"),
-    ERROR_SERVER(HttpStatus.INTERNAL_SERVER_ERROR, 500, "Lỗi hệ thống");
+    ERROR_SERVER(HttpStatus.INTERNAL_SERVER_ERROR, 500, "Lỗi hệ thống"),
+    INSUFFICIENT_QUANTITY(HttpStatus.BAD_REQUEST,404,"Không đủ số lượng sản phẩm"),
+    INVALID_INPUT(HttpStatus.BAD_REQUEST,405,"Dữ liệu nhập vào không hợp lệ")
+    ;
 
     ErrorCode(HttpStatus httpStatus, int code, String message) {
         this.httpStatus = httpStatus;

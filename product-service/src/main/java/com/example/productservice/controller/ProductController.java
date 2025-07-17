@@ -10,12 +10,10 @@ import com.example.productservice.entities.Product;
 import com.example.productservice.service.ProductService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.AccessLevel;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.List;
 
@@ -55,7 +53,7 @@ public class ProductController {
     }
 
     @DeleteMapping("delete/{id}")
-    ApiResponse<Void> delete(@PathVariable Long id) {
+    ApiResponse<Void> delete(@PathVariable Long id) throws JsonProcessingException {
         productService.deleteProduct(id);
         return ApiResponse.<Void>builder()
                 .message("Xóa sản phẩm thành công")
@@ -70,4 +68,7 @@ public class ProductController {
                 .message("Sản phẩm có id = " + id)
                 .build();
     }
+
+
+
 }

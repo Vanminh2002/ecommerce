@@ -2,8 +2,13 @@ package com.example.inventoryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
+@EnableCaching
 @SpringBootApplication
+@EnableFeignClients
+@ComponentScan(basePackages = {"com.example.inventoryservice", "com.example.commonlib"})
 public class InventoryServiceApplication {
 
     public static void main(String[] args) {

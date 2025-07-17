@@ -11,7 +11,6 @@
         <module name="ecommerce.notification-service.main" />
         <module name="ecommerce.permission-service.main" />
         <module name="ecommerce.payment-service.main" />
-        <module name="ecommerce.inventory-service.main" />
         <module name="ecommerce.shipping-service.main" />
         <module name="ecommerce.role-service.main" />
         <module name="ecommerce.cart-service.main" />
@@ -27,6 +26,7 @@
         <module name="ecommerce.category-service.main" />
         <module name="ecommerce.user-service.main" />
         <module name="ecommerce.order-service.main" />
+        <module name="ecommerce.inventory-service.main" />
       </profile>
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />

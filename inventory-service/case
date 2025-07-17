@@ -1,0 +1,37 @@
+
+
+## **Các case thường gặp với kho hàng (inventory):**
+
+1. **Kiểm tra tồn kho (Check stock)**
+   - Kiểm tra số lượng sản phẩm còn lại trong kho.
+   - Trả về số lượng hiện tại cho từng sản phẩm.
+
+2. **Cập nhật tồn kho khi bán hàng (Decrease stock on order)**
+   - Khi có đơn hàng mới, trừ số lượng sản phẩm tương ứng trong kho.
+   - Nếu không đủ hàng, báo lỗi.
+
+3. **Hoàn trả hàng (Increase stock on cancel/return)**
+   - Khi đơn hàng bị hủy hoặc khách trả hàng, cộng lại số lượng vào kho.
+
+4. **Nhập kho (Import/Restock)**
+   - Khi nhập thêm hàng mới, tăng số lượng sản phẩm trong kho.
+
+5. **Xuất kho (Manual export)**
+   - Khi xuất hàng cho mục đích khác (không phải bán), giảm số lượng trong kho.
+
+6. **Đặt trước (Reserve stock)**
+   - Khi khách đặt hàng nhưng chưa thanh toán, tạm giữ số lượng trong kho (reserve).
+   - Nếu thanh toán thành công thì trừ kho, nếu không thì trả lại.
+
+7. **Kiểm kê kho (Inventory audit)**
+   - Đối chiếu số lượng thực tế và số lượng hệ thống, cập nhật lại nếu có sai lệch.
+
+8. **Cảnh báo hết hàng (Low stock alert)**
+   - Khi số lượng sản phẩm dưới ngưỡng cảnh báo, gửi thông báo cho quản lý.
+
+9. **Lịch sử thay đổi kho (Stock history/log)**
+   - Lưu lại lịch sử nhập, xuất, điều chỉnh kho cho từng sản phẩm.
+
+10. **Đồng bộ kho với các hệ thống khác**
+    - Nếu bán đa kênh (online/offline), cần đồng bộ tồn kho giữa các hệ thống.
+

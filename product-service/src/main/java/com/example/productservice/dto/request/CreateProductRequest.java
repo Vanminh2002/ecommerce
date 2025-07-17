@@ -28,7 +28,7 @@ public class CreateProductRequest {
 
     Double discount; // Phần trăm hoặc số tiền giảm giá
 
-    String images; // Danh sách nhiều ảnh (nên có bảng riêng hoặc lưu JSON)
+//    String images; // Danh sách nhiều ảnh (nên có bảng riêng hoặc lưu JSON)
 
 //    String image;
 

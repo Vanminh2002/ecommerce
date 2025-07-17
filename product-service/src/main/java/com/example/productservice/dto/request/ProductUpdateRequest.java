@@ -15,6 +15,7 @@ public class ProductUpdateRequest {
 
     Integer inventory;
 
-    String image;
+//    String image;
+
 
 }

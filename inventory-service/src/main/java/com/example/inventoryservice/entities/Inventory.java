@@ -15,12 +15,23 @@ import java.time.LocalDateTime;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Inventory {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    Long productId;       // Liên kết với Product
-    Integer quantity;     // Số lượng tồn kho hiện tại
-    Integer reserved;     // Số lượng đã đặt nhưng chưa giao
-    Integer sold;         // Số lượng đã bán
-    String warehouse;     // Tên hoặc mã kho
+    @Column(name = "product_id")
+    Long productId;   // Liên kết với Product
+
+    @Column(name = "quantity")
+    Integer quantity;  // Số lượng tồn kho hiện tại
+
+    @Column(name = "reserved")
+    Integer reserved; // Số lượng đã đặt nhưng chưa giao
+
+    @Column(name = "sold")
+    Integer sold;  // Số lượng đã bán
+
+    @Column(name = "warehouse")
+    String warehouse;  // Tên hoặc mã kho
+
+    @Column(name = "updated_at")
     LocalDateTime updatedAt;
 }
